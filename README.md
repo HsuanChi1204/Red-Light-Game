@@ -1,6 +1,6 @@
 # Red Light Game: Stop, Think, Win!
 
-![Game Banner](https://via.placeholder.com/1200x400 "Red Light Game Banner")
+![Game Banner](https://github.com/HsuanChi1204/Red-Light-Game/blob/main/Red-Light-Game_Banner.png "Red Light Game Banner")
 
 ## Try It Out
 [Play the Game Here](https://d9kvnfvblc1lm.cloudfront.net)
