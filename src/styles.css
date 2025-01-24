@@ -1,0 +1,252 @@
+/* 全域樣式 */
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #121212; /* 深色背景 */
+  font-family: "Arial", sans-serif;
+  color: #ffffff; /* 全域文字顏色 */
+}
+
+/* 主遊戲容器 */
+#game-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; /* 背景 */
+}
+
+/* 首頁樣式 */
+#home-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.name-label {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #cbcbcb; /* 白色字體 */
+}
+
+.name-input {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 70px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  background-color: #1e1e1e; /* 深色背景 */
+  color: #dadada; /* 白色字體 */
+}
+
+.role-label {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #cbcbcb; /* 白色字體 */
+}
+
+.role-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.role-box {
+  width: 140px;
+  height: 180px;
+  border-radius: 15px;
+  background-color: #282828; /* 深色背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.role-box:hover {
+  transform: scale(1.1);
+}
+
+.role-box.selected {
+  border: 3px solid #cb2b76; /* 粉色邊框 */
+}
+
+.role-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.start-button {
+  font-size: 22px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #cb2b76; /* 綠色背景 */
+  color: #ffffff; /* 白色文字 */
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #9c215a; /* 深綠色 */
+}
+
+/* 玩家名稱標籤 */
+.player-name {
+  font-size: 16px;
+  color: #dadada; /* 白色字體 */
+  /* background-color: rgba(0, 0, 0, 0.2); 半透明背景 */
+  padding: 5px 10px;
+  /* border-radius: 5px; */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 遊戲內訊息框 */
+#game-message {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.85); /* 半透明黑色背景 */
+  color: #ffffff; /* 白色字體 */
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 按鈕容器 */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 通用按鈕樣式 */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 重新開始按鈕 */
+#restart-button {
+  background-color: #f44336; /* 紅色背景 */
+  color: #ffffff; /* 白色字體 */
+}
+
+#restart-button:hover {
+  background-color: #d32f2f; /* 深紅色 */
+}
+
+/* 送出成績按鈕 */
+#submit-button {
+  background-color: #2196f3; /* 藍色背景 */
+  color: #ffffff; /* 白色字體 */
+}
+
+#submit-button:hover {
+  background-color: #1976d2; /* 深藍色 */
+}
+
+/* Leaderboard page container */
+#leaderboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title styling */
+.leaderboard-title {
+  font-size: 2.5rem;
+  color: #dadada;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Leaderboard list container */
+.leaderboard-list {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Individual leaderboard entries */
+.leaderboard-entry {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #2a2a2a;
+  font-size: 1.2rem;
+}
+
+.leaderboard-entry:last-child {
+  border-bottom: none;
+}
+
+/* Rank styling */
+.entry-rank {
+  font-weight: bold;
+  color: #99248a;
+}
+
+/* Name styling */
+.entry-name {
+  flex: 1;
+  text-align: left;
+  margin-left: 10px;
+  color: #dadada;
+}
+
+/* Score and time styling */
+.entry-score {
+  margin-right: 15px;
+  font-weight: bold;
+  color: #1b6244;
+}
+
+.entry-time {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Home button styling */
+.home-button {
+  background-color: #2980b9;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #3498db;
+}
