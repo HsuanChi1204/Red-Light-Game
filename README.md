@@ -2,8 +2,14 @@
 
 ![Game Banner](https://github.com/HsuanChi1204/Red-Light-Game/blob/main/Red-Light-Game_Banner.png "Red Light Game Banner")
 
-## Try It Out
-[Play the Game Here](https://d9kvnfvblc1lm.cloudfront.net)
+## How To Play
+Rules: 
+- Use the **arrow keys** to move ⬆️ ⬇️ ⬅️ ➡️ 
+- Press **space** to jump, avoid obstacles
+- **Don't move** when the 'ghost' turns around (including you in front of the screen!) 👀
+
+## Try It Now
+🎮 [Play Right Now](https://d9kvnfvblc1lm.cloudfront.net)
 
 ## Inspiration
 The Red Light Game: Stop, Think, Win! was inspired by the intense TV series *Squid Game* and cherished childhood memories of playing red light, green light in the park near my home. The blend of nostalgia and adrenaline fueled my desire to create a game that’s both fun and strategic.
